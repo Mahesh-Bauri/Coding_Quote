@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Showquote">
+
+    <TextView
+        android:id="@+id/quoteview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.9"
+        android:background="@color/colorPrimaryDark"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Genius is one percent inspiration and ninety-nine percent prespiration."
+        android:textColor="#9e9e9e"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_stat_name"
+        android:drawSelectorOnTop="true"
+        android:onClick="send"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+
+        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:background="@drawable/ic_back"
+        android:drawSelectorOnTop="true"
+        android:onClick="back_btn"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="548dp" />
+
+</android.support.constraint.ConstraintLayout>
